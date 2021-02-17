@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>TODO LIST</h3>
+    <style>
+        body{
+            text-align: center;
+        }
+        .todoInput{
+            border-radius: 2;
+        }
+        .Btn{
+            border-radius: 4px;
+            border: hidden;
+            background-color: lightsalmon;
+            color: white;
+        }
+        h3{
+            background-color: lightsalmon;
+            color: white;
+        }
+        .todoInput::placeholder{
+            font-size: 10px;
+        }
+
+    </style>
+    
+    <div>
+        <input type="text" id="todoInput" class="todoInput" placeholder="ENTER YOUR TODO ITEM">
+        <button  onclick="addItem()" id="addItem" class="Btn" > Add Item</button>
+        <button  onclick="deleteAll()" class="Btn"> delete all </button>
+        
+    </div>
+    <div>
+        <ul id="ul">
+            
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
